@@ -1,0 +1,21 @@
+package integers
+
+import (
+	"fmt"
+	"testing"
+)
+
+func TestAdder(t *testing.T) {
+	got := Add(2, 5)
+	want := 7
+
+	if got != want {
+		t.Errorf("got: %d and want: %d", got, want)
+	}
+}
+
+func ExampleAdd() {
+	sum := Add(1, 5)
+	fmt.Println(sum)
+	// Output: 6
+}
